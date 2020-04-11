@@ -42,14 +42,14 @@ function App() {
 
 
   // this will be called when React DOM is rendered
-  // useEffect(
-  //   () => {
-  //     const keys = document.querySelectorAll('.key');
-  //     console.log('keys grabbed using useEffect', keys);
-  //     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  //     window.addEventListener('keydown',playSound);
-  //   }
-  // )
+  useEffect(
+    () => {
+      const keys = document.querySelectorAll('.key');
+      console.log('keys grabbed using useEffect', keys);
+      keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+      window.addEventListener('keydown',playSound);
+    }
+  )
  
    return (
     <>
